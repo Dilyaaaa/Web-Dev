@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset="utf-8">
+        <title>Challenge: Colorful creature
+            <style>
+        
+        p {
+            color: rgb(80, 232, 15);
+        }  
+        h1{
+            color: rgb(80, 232, 15);
+            
+        }
+        
+        body {
+            background-color: rgb(25, 25,60);
+        }
+            
+        </style>
+        </title>
+        
+        
+        
+    </head>
+    <body>
+        
+        <h1>The coolest creature</h1>
+        
+        <p>{
+            color: rgb(80, 232, 15);
+        } The <em>Dog</em> is awesome because they are <strong>loyal and cute</strong>.</p>
+        <p><img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/animals/retriever.png"alt="Dog" width="120"></p>
+        <p>The <strong><em>dog</em> (Canis familiaris[4][5] or Canis lupus familiaris[5]) is a domesticated descendant of the wolf</strong>. Also called the domestic dog, it is derived from the extinct Pleistocene wolf,[6][7] and the modern wolf is the dog's nearest living relative.[8] <em>Dogs</em> were the first species to be domesticated[9][8] by hunter-gatherers over 15,000 years ago[7] before the development of agriculture.[1] Due to their long association with humans, dogs have expanded to a large number of domestic individuals[10] and gained the ability to thrive on a starch-rich diet that would be inadequate for other canids.</p>
+        <p><img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/animals/dog_sleeping-puppy.png"alt="Dog" width="120"></p>
+    </body>
+</html>
