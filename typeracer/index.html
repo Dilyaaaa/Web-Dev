@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Typeracer</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <div class="container">
+            <div class="stats">
+                <p>Time:<span id="timer">0s</span></p>
+                <p>Mistakes:<span id="mistakes">0</span></p>
+            </div>
+            <div id="quote" onmousedown="return false" 
+            onselectstart="return false">
+             TypeRacer allows people to race each other by typing quotes
+             from movies, books, and songs. You can join races against 
+             random people or your friends in competitions online,
+              or you can send an invite to your friends.
+            </div>
+            <textarea rows="3" id="quote-input" 
+            placeholder="Type here when the test starts...">
+            </textarea>
+            <button id="start-test">Start Test</button>
+            <button id="stop-test">Stop Test</button>
+            <div class="result">
+                <h3>Result</h3>
+                <div class="wrapper">
+                    <p>Accuracy: 
+                        <span id="accuracy"></span>
+                    </p>
+                    <p>Speed: <span id="wpm"></span></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
