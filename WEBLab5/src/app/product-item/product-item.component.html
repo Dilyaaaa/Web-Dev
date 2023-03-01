@@ -12,11 +12,12 @@
     <p *ngIf="product.description"> Description: {{ product.description }}</p>
 
     <button type="button"(click)="like(product)">Like|{{product.like}}</button>
+    <button type="button"(click)="remove(product)">Remove</button>
+
+
     <a href="https://t.me/share/url?url={{product.url}}">
     
-    <button type="button" (click)="share()">
-    Share
-    </button> </a>
+    <button type="button" (click)="share()">Share</button> </a>
     
     <app-product-alerts
     [product]="product" 
