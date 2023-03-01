@@ -13,7 +13,19 @@ export class ProductItemComponent {
 like(products:Product){
   products.like+=1;
 }
+
+remove(product:Product){
+  for(let i=0; i <products.length;i++){
+    if(products[i]==product){
+      delete products[i];
+      break;
+    }
+  }
+}
   share() {
+  }
+  kaspi(a:string|URL|undefined){
+    window.open("https://kaspi.kz/shop/search")
   }
 
   onNotify() {
