@@ -7,6 +7,7 @@ export interface Product {
   rating: number;
   url: string;
   category:string;
+  like:number;
 }
 
 export const products : Product[]= [
@@ -19,7 +20,8 @@ export const products : Product[]= [
     description: ' тип: LED-телевизор диагональ: 43 дюйм разрешение: 3840x2160 поддержка HD: 4K HDR технология Smart TV: Да wi-Fi: Да входы: аудио, ,оптический, ,VGA, ,HDMI, ,USB, ,Bluetooth',
     rating: 7,
     url: "https://kaspi.kz/shop/p/tcl-43p615-109-sm-chernyi-102569498/?c=750000000#!/item",
-    category:"tv"
+    category:"tv",
+    like: 1
   },
   {
     id: 2,
@@ -29,7 +31,8 @@ export const products : Product[]= [
     description:'поддержка HD: 720p HD технология Smart TV: Нет  wi-Fi: Да входы: AV, ,HDMI, ,USB, ,антенный, ,Bluetooth',
     rating: 8,
     url:"https://kaspi.kz/shop/p/yasin-led-32e7000-81-sm-chernyi-103411518/?c=750000000#!/item",
-    category:"tv"
+    category:"tv",
+    like: 2
 
   },
   {
@@ -40,7 +43,8 @@ export const products : Product[]= [
     description:'технология Smart TV: Да wi-Fi: Да входы: оптический, ,AV, ,компонентный, ,HDMI, ,Ethernet (RJ-45), ,USB, ,RS-232, ,MHL',
     rating: 9,
     url:"https://kaspi.kz/shop/p/yasin-40g7-102-sm-chernyi-104045834/?c=750000000#!/item",
-    category:"tv"
+    category:"tv",
+    like: 0
   },
   {
     id: 4,
@@ -50,7 +54,8 @@ export const products : Product[]= [
     description:'тип: LED-телевизор  диагональ: 32 дюйм разрешение: 1366x768 поддержка HD: 1080p Full HDтехнология Smart TV: Даwi-Fi: Давходы: Bluetooth, ,HDMI, ,Ethernet (RJ-45), ,USB, ,антенный',
     rating: 9,
     url:"https://kaspi.kz/shop/p/tcl-32s65a-81-sm-chernyi-105537206/?c=750000000#!/item",
-    category:"tv"
+    category:"tv",
+    like: 3
   },
   {
     id: 5,
@@ -60,7 +65,8 @@ export const products : Product[]= [
     description:'тип: LED-телевизор диагональ: 32 дюйм разрешение: 1366x768 поддержка HD: 1080i HD технология Smart TV: Да wi-Fi: Да входы: AV, ,HDMI, ,Ethernet (RJ-45), ,USB, ,Bluetooth',
     rating: 8,
     url:"https://kaspi.kz/shop/p/dexp-h32h8000q-chernyi-108526272/?c=750000000#!/item",
-    category:"tv"
+    category:"tv",
+    like: 1
   },
   {
     id: 6,
@@ -70,7 +76,8 @@ export const products : Product[]= [
     description: 'тип: портативный мощность: 50 Вт управление: электронное количество скоростей: 1 цвет: белый, ,прозрачный',
     rating: 7.2,
     url:"https://kaspi.kz/shop/p/fresh-juice-blend12-belyi-105722831/?c=750000000#!/item",
-    category:"blender"
+    category:"blender",
+    like: 0
   },
   {
     id: 7,
@@ -80,7 +87,8 @@ export const products : Product[]= [
     description: 'тип: погружной мощность: 1200 Вт управление: механическое количество скоростей: 2 цвет: черный, ,розовый',
     rating: 5,
     url:"https://kaspi.kz/shop/p/arnica-diva-trend-chernyi-rozovyi-100701067/?c=750000000#!/item",
-    category:"blender"
+    category:"blender",
+    like: 1
   },
 
   {id: 8,
@@ -90,7 +98,8 @@ export const products : Product[]= [
     description:'тип: стационарный мощность: 1200 Вт управление: механическое количество скоростей: 2  цвет: серебристый',
     rating: 8,
     url:"https://kaspi.kz/shop/p/artel-art-bl-s62-serebristyi-101938035/?c=750000000#!/item",
-    category:"blender"
+    category:"blender",
+    like: 3
   },
   {id: 9,
     image:"https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h87/h16/49391010152478/midea-mj-bh1001w-104140768-1.jpg",
@@ -99,7 +108,8 @@ export const products : Product[]= [
     description:'тип: кабель разъемы: DisplayPort - DisplayPort длина кабеля: 2 м',
     rating: 9,
     url:"https://kaspi.kz/shop/p/midea-mj-bh1001w-104140768/?c=750000000#!/item",
-    category:"blender"
+    category:"blender",
+    like: 1
   },
   {id: 10,
     image:"https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h5a/h9f/63148705021982/fresh-juice-214b-rozovyi-106075301-1.jpg",
@@ -108,7 +118,8 @@ export const products : Product[]= [
     description:'тип: портативный мощность: 50 Вт управление: электронное количество скоростей: 1 цвет: розовый',
     rating: 8,
     url:"https://kaspi.kz/shop/p/portativnyi-fresh-juice-214b-rozovyi-106075301/?c=750000000#!/item",
-    category:"blender"
+    category:"blender",
+    like: 0
   },
   {
     id: 11,
@@ -118,7 +129,8 @@ export const products : Product[]= [
     description:'диагональ экрана: 15.6 дюйм процессор: Intel Pentium Gold 7505 видеокарта: Intel UHD Graphics  размер оперативной памяти: 8 ГБ тип жесткого диска: SSD общий объем накопителей: 256 ГБ',
     rating: 7,
     url:"https://kaspi.kz/shop/p/lenovo-ideapad-3-15itl6-82h8005grk-serebristyi-108090705/?c=750000000#!/item",
-    category:"laptop"
+    category:"laptop",
+    like: 2
   },
   {
     id: 12,
@@ -128,7 +140,8 @@ export const products : Product[]= [
     description:'диагональ экрана: 15.6 дюйм процессор: Intel Core i5 11400H видеокарта: NVIDIA GeForce GTX 1650 размер оперативной памяти: 16 ГБ тип жесткого диска: SSD общий объем накопителей: 512 ГБ',
     rating: 10,
     url:"https://kaspi.kz/shop/p/acer-nitro-5-an515-57-nh-qeker-004-chernyi-108194028/?c=750000000#!/item",
-    category:"laptop"
+    category:"laptop",
+    like: 2
   },
   {
     id: 13,
@@ -138,7 +151,8 @@ export const products : Product[]= [
     description:'диагональ экрана: 15.6 дюйм процессор: Intel Core i3 1115G4 видеокарта: Intel UHD Graphic  размер оперативной памяти: 8 ГБ тип жесткого диска: SSD общий объем накопителей: 512 ГБ',
     rating: 9,
     url:"https://kaspi.kz/shop/p/asus-x515ea-bq3144w-i385suw1-90nb0ty1-m02zl0-temno-seryi-107650928/?c=750000000#!/item",
-    category:"laptop"
+    category:"laptop",
+    like: 1
   },
   {id: 14,
     image:"https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h5e/he2/67940461740062/lenovo-ideapad-1-14igl05-81vu00h3ru-seryi-108464874-1.jpg",
@@ -147,7 +161,8 @@ export const products : Product[]= [
     description:'диагональ экрана: 14 дюйм процессор: Intel Celeron N4020  видеокарта: Intel UHD Graphics 600 размер оперативной памяти: 4 ГБ тип жесткого диска: SSD общий объем накопителей: 128 ГБ',
     rating: 8,
     url:"https://kaspi.kz/shop/p/lenovo-ideapad-1-14igl05-81vu00h3ru-seryi-108464874/?c=750000000#!/item",
-    category:"laptop"
+    category:"laptop",
+    like: 1
   },
   {id: 15,
       image:"https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h6b/h33/62100002701342/asus-tuf-gaming-a15-fa506ihrb-hn084-90nr07g7-m008c0-cernyj-106255184-1.jpg",
@@ -156,7 +171,8 @@ export const products : Product[]= [
       description:'диагональ экрана: 15.6 дюйм  процессор: AMD Ryzen 5 4600H  видеокарта: nVidia GeForce GTX1650  размер оперативной памяти: 8 ГБ  тип жесткого диска: SSD  общий объем накопителей: 512 ГБ',
       rating: 10,
       url:"https://kaspi.kz/shop/p/asus-tuf-gaming-a15-fa506ihrb-hn084-90nr07g7-m008c0-chernyi-106255184/?c=750000000#!/item",
-      category:"laptop"
+      category:"laptop",
+      like: 0
   },
   {id: 16,
     image:"https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h90/h49/49613711966238/samsung-galaxy-a13-4-gb-128-gb-chernyi-104253279-1.jpg",
@@ -165,7 +181,8 @@ export const products : Product[]= [
     description:'технология NFC: Да цвет: черный тип экрана: PLS TFT LCD сенсорный, мультитач диагональ: 6.6 дюйм размер оперативной памяти: 4 ГБ процессор: 8-ядерный Exynos 850 объем встроенной памяти: 128 ГБ емкость аккумулятора: 5000 мАч',
     rating: 8,
     url:"https://kaspi.kz/shop/p/samsung-galaxy-a13-4-gb-128-gb-chernyi-104253279/?c=750000000#!/item",
-    category:"phone"
+    category:"phone",
+    like: 1
   },
   {id: 17,
     image:"https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/hbc/h0a/49939925205022/xiaomi-redmi-10c-4-gb-128-gb-seryj-104417231-1.jpg",
@@ -174,7 +191,8 @@ export const products : Product[]= [
     description:'технология NFC: Нет цвет: серый тип экрана: IPS, сенсорный, мультитач диагональ: 6.71 дюйм размер оперативной памяти: 4 ГБ процессор: 8-ядерный Qualcomm Snapdragon 680 объем встроенной памяти: 128 ГБ емкость аккумулятора: 5000 мАч',
     rating: 9,
     url:"https://kaspi.kz/shop/p/xiaomi-redmi-10c-4-gb-128-gb-seryi-104417231/?c=750000000#!/item",
-    category:"phone"
+    category:"phone",
+    like: 1
   },
   {id: 18,
     image:"https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h45/h27/64487158087710/xiaomi-redmi-note-10-pro-8-gb-128-gb-seryi-107221005-1.jpg",
@@ -183,7 +201,8 @@ export const products : Product[]= [
     description:'технология NFC: Да цвет: серый  тип экрана: цветной AMOLED, сенсорный  диагональ: 6.67 дюйм размер оперативной памяти: 8 ГБ процессор: 8-ядерный Qualcomm Snapdragon 732G объем встроенной памяти: 256 ГБ емкость аккумулятора: 5020 мАч',
     rating: 7,
     url:"https://kaspi.kz/shop/p/xiaomi-redmi-note-10-pro-8-gb-256-gb-seryi-107221005/?c=750000000#!/item",
-    category:"phone"
+    category:"phone",
+    like: 1
   },
   {id: 19,
     image:"https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h96/h3c/46392664227870/apple-iphone-13-128gb-belyj-102298420-1-Container.jpg",
@@ -192,7 +211,8 @@ export const products : Product[]= [
     description:'технология NFC: Да цвет: белый тип экрана: OLED, Super Retina XDR диагональ: 6.1 дюйм размер оперативной памяти: 4 ГБ процессор: 6-ядерный Apple A15 Bionic объем встроенной памяти: 128 ГБ емкость аккумулятора: 3095 мАч',
     rating: 10,
     url:"https://kaspi.kz/shop/p/apple-iphone-13-128gb-belyi-102298420/?c=750000000#!/item",
-    category:"phone"
+    category:"phone",
+    like: 1
   },
   {id: 20,
     image:"https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h4d/h62/62948396728350/apple-iphone-14-pro-128gb-fioletovyj-106363319-1.jpg",
@@ -201,7 +221,8 @@ export const products : Product[]= [
     description:'технология NFC: Да цвет: фиолетовый тип экрана: OLED, Super Retina XDR display с возможностью постоянной работы диагональ: 6.1 дюйм размер оперативной памяти: 6 ГБ процессор: 6-ядерный Apple A16 Bionic объем встроенной памяти: 256 ГБ емкость аккумулятора: 3125 мАч',
     rating: 10,
     url:"https://kaspi.kz/shop/p/apple-iphone-14-pro-256gb-fioletovyi-106363319/?c=750000000#!/item",
-    category:"phone"
+    category:"phone",
+    like: 1
   }
   
 
