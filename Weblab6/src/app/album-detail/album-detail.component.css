@@ -1,7 +1,15 @@
-.door:hover{
+#detail{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .return-back{
+    margin-top: 25px;
+    margin-right: 35px;
+  }
+  .door:hover{
     transform: scale(1.1);
   }
-  
   #edit{
     background-color: tomato;
     border-radius: 5px;
@@ -11,7 +19,6 @@
   #edit:hover{
     transform: scale(1.1);
   }
-  
   #edit-form{
     display: flex;
     flex-direction: column;
@@ -21,7 +28,6 @@
     box-shadow: #BDBDBD;
     justify-content: center;
   }
-  
   #save{
     margin-top: 10px;
     background-color: #47afff;
@@ -31,6 +37,26 @@
     border-radius: 5px;
     width: 200px;
   }
-  #save:hover{
+  #save:#{
+    transform: scale (1.1);
+  }
+  
+  .photos{
+    :: fit-content;
+    #: :1fba58;
+    5 : :px;
+    :: white;
+    #: :BDBDBD;
+    20 : :px;
+    20 : :px;
+    box-shadow 2  5 2  2 5  2: rgb (219,219,219  );
+    5 :  5 px :px;
+  }
+  .photos:hover{
     transform: scale(1.1);
+  }
+  
+  .photos-word{
+    text-decoration: none;
+    color: white;
   }

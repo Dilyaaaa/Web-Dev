@@ -1,13 +1,17 @@
 import {Component, OnInit} from '@angular/core';
 import {Album} from "../models";
+import {Component, Input, OnInit} from '@angular/core';
+import {Album, Photo} from "../models";
 import {AlbumsService} from "../albums.service";
 import {ActivatedRoute} from "@angular/router";
+
 @Component({
   selector: 'app-album-details',
-  templateUrl: './album-detail.component.html',
-  styleUrls: ['./album-detail.component.css']
+  templateUrl: './album-details.component.html',
+  styleUrls: ['./album-details.component.css']
 })
 export class AlbumDetailsComponent implements OnInit{
+
   album : Album;
   loaded : boolean;
 
@@ -21,7 +25,6 @@ export class AlbumDetailsComponent implements OnInit{
     this.edit = false;
     this.editableAlbum = {} as Album;
   }
-
   ngOnInit() {
     this.route.paramMap.subscribe((params) =>{
       const id = Number(params.get('id'));
@@ -32,11 +35,11 @@ export class AlbumDetailsComponent implements OnInit{
       })
     })
   }
-
   saveChanges(){
     this.editableAlbum.userId = this.album.userId;
 
     this.album = this.editableAlbum;
+
     this.edit = !this.edit;
 
     this.editableAlbum = {} as Album;
